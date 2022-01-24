@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Feedback Form</title>
+<meta name="viewport" content="width" device-width, initial scale="1">
+</head>
+<style>
+*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+font-family: 'montserrat', sans-serif;}
+body{
+background: url('https://www.ckimgroup.com/wp-content/uploads/2018/09/form-background-1024x683.jpg') no-repeat center;
+background-size: cover;
+height: 100vh; 
+padding: 40px 0;
+}
+.radio-inline{
+margin: 0px 40px 20px 0px;
+cursor: pointer;}
+.feedback-section h1,h5,h3{
+text-align: center;
+color: #ddd;}
+.border{
+width: 100px;
+height: 10px;
+background: #34495e;
+margin: 40px auto;
+}
+.feedback-form{
+max-width: 600px;
+margin: auto;
+padding: 0 10px;
+overflow: hidden;
+}
+.feedback-form-text{
+display: block;
+width: 100%;
+box-sizing: border-box;
+margin: 16px 0;
+border: 0;
+background: #111;
+padding: 20px 40px;
+outline: none;
+color: #ddd;
+transition: 0.5s;
+}
+.feedback-form-text:hover{
+box-shadow: 0 0 10px 4px #C0C0C0;
+}
+textarea.contact-form-text{
+resize: none;
+height: 120px;
+}
+.feedback-form-btn{
+float: right;
+border: 0;
+background: #34495e;
+color: #fff;
+padding: 12px 50px;
+border-radius: 20px;
+cursor: pointer:
+transition: 0.5s;
+}
+.contact-form-btn:hover{
+background: #2980b9;}
+
+</style>
+<body>
+<div class="feedback-section">
+<h1 style="color:Aqua">Feedback Form</h1>
+<h3 class="text-centre">Please write your feedback below:</h3>
+<h5 class="mt-4">How do you rate your overall experience?</h5>
+<form class="feedback-form">
+<label class="radio-inline"><input type="radio" name="experience" value="bad">Bad</label>
+<label class="radio-inline"><input type="radio" name="experience" value="bad">Average</label>
+<label class="radio-inline"><input type="radio" name="experience" value="bad">Good</label><br>
+<input type="text" class="feedback-form-text" placeholder="Name">
+<input type="text" class="feedback-form-text" placeholder="Last Name">
+<input type="email" class="feedback-form-text" placeholder="Email">
+<input type="number" class="feedback-form-text" placeholder="Phone No.">
+<textarea class="feedback-form-text" placeholder="Feedback"></textarea>
+<input type="submit" class="feedback-form-btn" value="Send">
+</form>
+
+</body>
+</html>

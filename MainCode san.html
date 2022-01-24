@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Grocery Store</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vegandfruits.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <script>
+    function stickymenu(){
+      var sticky=document.getElementById('sticky');
+      if(window.pageYoffeset>120)
+      {
+        sticky.classList.add('sticky');
+      }
+      else{
+        sticky.classList.remove('sticky');
+      }
+
+    }
+    window.onscroll=function(){
+      stickymenu();
+    }
+    function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("b").innerHTML="Organic Orka"+'&nbsp &nbsp &nbsp &nbsp'+"₹20/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("b").innerHTML="";
+}
+}
+function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("b1").innerHTML="Broccoly"+'&nbsp &nbsp &nbsp &nbsp'+"₹20/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("b1").innerHTML="";
+}
+}
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("b2").innerHTML="carrot"+'&nbsp &nbsp &nbsp &nbsp'+"₹10/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("b2").innerHTML="";
+}
+}
+    function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("b3").innerHTML="Onion"+'&nbsp &nbsp &nbsp &nbsp'+"₹30/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("b3").innerHTML="";
+}
+}
+    function myFunction4() {
+  var x = document.getElementById("myDIV4");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("b4").innerHTML="organic tomato"+'&nbsp &nbsp &nbsp &nbsp'+"₹30/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("b4").innerHTML="";
+}
+}
+    function myFunction5() {
+  var x = document.getElementById("myDIV5");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("b5").innerHTML="organic red chilli"+'&nbsp &nbsp &nbsp &nbsp'+"₹40/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("b5").innerHTML="";
+}
+}
+    function myFunctiona() {
+  var x = document.getElementById("myDIVa");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("a").innerHTML="organic apple"+'&nbsp &nbsp &nbsp &nbsp'+"₹100/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("a").innerHTML="";
+}
+}
+    function myFunctiona1() {
+  var x = document.getElementById("myDIVa1");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("a1").innerHTML="strawberry"+'&nbsp &nbsp &nbsp &nbsp'+"₹150/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("a1").innerHTML="";
+}
+}
+    function myFunctiona2() {
+  var x = document.getElementById("myDIVa");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("a2").innerHTML="banana"+'&nbsp &nbsp &nbsp &nbsp'+"₹80/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("a2").innerHTML="";
+}
+}
+    function myFunctiona3() {
+  var x = document.getElementById("myDIVa");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("a3").innerHTML="organic mango"+'&nbsp &nbsp &nbsp &nbsp'+"₹70/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("a3").innerHTML="";
+}
+}
+    function myFunctiona4() {
+  var x = document.getElementById("myDIV4");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("a4").innerHTML="organic orange"+'&nbsp &nbsp &nbsp &nbsp'+"₹50/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("a4").innerHTML="";
+}
+}
+    function myFunctiona5() {
+  var x = document.getElementById("myDIVa");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("a5").innerHTML="organic guava"+'&nbsp &nbsp &nbsp &nbsp'+"₹40/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("a5").innerHTML="";
+}
+}
+
+    function myFunctionm1() {
+  var x = document.getElementById("myDIVm1");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("m1").innerHTML="seafood"+'&nbsp &nbsp &nbsp &nbsp'+"₹200/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("m1").innerHTML="";
+}
+}
+    function myFunctionm2() {
+  var x = document.getElementById("myDIVm2");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("m2").innerHTML="mutton"+'&nbsp &nbsp &nbsp &nbsp'+"₹50/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("m2").innerHTML="";
+}
+}
+    function myFunctionm3() {
+  var x = document.getElementById("myDIVm3");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("m3").innerHTML="chiken"+'&nbsp &nbsp &nbsp &nbsp'+"₹80/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("m3").innerHTML="";
+}
+}
+    function myFunctionm4() {
+  var x = document.getElementById("myDIVm4");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("m4").innerHTML="Red meat"+'&nbsp &nbsp &nbsp &nbsp'+"₹50/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("m4").innerHTML="";
+}
+}
+    function myFunctionm5() {
+  var x = document.getElementById("myDIVm5");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("m5").innerHTML="pork arc"+'&nbsp &nbsp &nbsp &nbsp'+"₹70/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("m5").innerHTML="";
+}
+}
+    function myFunctiond() {
+  var x = document.getElementById("myDIVd");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("d").innerHTML="pourtly"+'&nbsp &nbsp &nbsp &nbsp'+"₹60/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("d").innerHTML="";
+}
+}
+function myFunctionm() {
+  var x = document.getElementById("myDIVm");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("m").innerHTML="currant"+'&nbsp &nbsp &nbsp &nbsp'+"₹100/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("m").innerHTML="";
+}
+}
+    function myFunctiond1() {
+  var x = document.getElementById("myDIVd1");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("d1").innerHTML="pine nut"+'&nbsp &nbsp &nbsp &nbsp'+"₹150/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("d1").innerHTML="";
+}
+}
+    function myFunctiond2() {
+  var x = document.getElementById("myDIVd2");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("d2").innerHTML="almond"+'&nbsp &nbsp &nbsp &nbsp'+"₹250/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("d2").innerHTML="";
+}
+}
+    function myFunctiond3() {
+  var x = document.getElementById("myDIVd3");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("d3").innerHTML="walnut"+'&nbsp &nbsp &nbsp &nbsp'+"₹200/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("d3").innerHTML="";
+}
+}
+    function myFunctiond4() {
+  var x = document.getElementById("myDIVd4");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("d4").innerHTML="cashew nut"+'&nbsp &nbsp &nbsp &nbsp'+"₹250/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("d4").innerHTML="";
+}
+}
+    function myFunctiond5() {
+  var x = document.getElementById("myDIVd5");
+  if (x.innerHTML == ""||x.innerHTML=="Removed from Cart") {
+    x.style.color = "Green";
+    x.innerHTML = "Added to Cart";
+	document.getElementById("d5").innerHTML="pistachio"+'&nbsp &nbsp &nbsp &nbsp'+"₹200/250gms";
+  } else {   
+       x.style.color = "red";
+       x.innerHTML = "Removed from Cart";
+	   document.getElementById("d5").innerHTML="";
+}
+}
+  </script>
+
+
+  </head>
+
+  
+  <body background="mulberry-washi-paper-texture-background-off-white-natural-fibre-flecks-organic-cream-color-all-over-speckled-recycled-background.jpg">
+    <div class="parallax">
+<div class="page-title">Eat Fresh</div>
+    </div>
+    <div class="menu" id="sticky">
+      <ul class="menu-ul">
+        <a href="try.html" class="a-menu"><li>Home</li></a>
+        <a href="loginpage.html" class="a-menu"><li>Login Page</li></a>
+        <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+        <a href="#fruits" class="a-menu"><li>Fruits</li></a>
+        <a href="#meat" class="a-menu"><li>Meat & Seafood</li></a>
+        <a href="#dryfruits" class="a-menu"><li>Dry Fruits</li></a>
+    
+
+        <a href="#cart" class="a-menu"><li>Cart</li></a>
+      </ul>
+      <div class="search-box">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+<!----Home page begins---->
+<div class="container">
+<a href="#vegetables">
+  <div class="categories">
+    <img src="category.jpg" class="item-image"/>
+    <div class="image-title">Vegetables</div>
+  </div>
+</a>
+<a href="#fruits">
+  <div class="categories">
+    <img src="category-2.jpg" class="item-image"/>
+    <div class="image-title">Fruits</div>
+  </div>
+</a>
+<a href="#meat">
+  <div class="categories">
+    <img src="boiler-chicken-meat-500x500.jpg" class="item-image"/>
+    <div class="image-title">Meat & Seafood</div>
+  </div>
+</a>
+<a href="#dryfruits">
+  <div class="categories">
+    <img src="category-4.jpg" class="item-image"/>
+    <div class="image-title">Dry Fruits</div>
+  </div>
+</a>
+</div>
+
+<!--Deals begin here-->
+
+<!--Deals end here-->
+<!--veg bigns here-->
+<div class="deals-container" id="vegetables">
+  <div class="parallax">
+    <div class="title">VEGETABLES</div>
+  </div>
+  <div class="items">
+<div class="images">
+  <img src="product-4.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+  <b>organic cabbage</b><br>
+  <div class="item-select">
+    Price:₹20/250gms
+  </div>
+  <lable>Qty:</lable>
+  <select class="item-select">
+    <option>250gms</option>
+    <option>500gms</option>
+    <option>750gms</option>
+    <option>1000gms</option>
+  </select><br/>
+  <span id="myDIV"></span><br/>
+  <button class="buynow-btn"onclick="myFunction()">Add to cart:</button>
+</div>
+  </div>
+  <div class="items">
+    <div class="images">
+      <img src="product-6.jpg" class="item-image-size"/>
+    </div>
+    <div class="description">
+      <b>Broccoly</b><br>
+      <div class="item-select">
+        Price:₹20/250gms
+      </div>
+      <lable>Qty:</lable>
+      <select class="item-select">
+        <option>250gms</option>
+        <option>500gms</option>
+        <option>750gms</option>
+        <option>1000gms</option>
+      </select><br/>
+     <span id="myDIV1"></span><br/>
+  <button class="buynow-btn"onclick="myFunction1()">Add to cart:</button>
+    </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="product-7.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>carrot</b><br>
+          <div class="item-select">
+            Price:₹10/250gms
+          </div>
+          <lable>Qty:</lable>
+          <select class="item-select">
+            <option>250gms</option>
+            <option>500gms</option>
+            <option>750gms</option>
+            <option>1000gms</option>
+          </select><br/>
+          <span id="myDIV2"></span><br/>
+  <button class="buynow-btn"onclick="myFunction2()">Add to cart:</button>
+        </div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="product-9.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>organic onion</b><br>
+              <div class="item-select">
+                Price:₹30/250gms
+              </div>
+              <lable>Qty:</lable>
+              <select class="item-select">
+                <option>250gms</option>
+                <option>500gms</option>
+                <option>750gms</option>
+                <option>1000gms</option>
+              </select><br/>
+              <span id="myDIV3"></span><br/>
+  <button class="buynow-btn"onclick="myFunction3()">Add to cart:</button>
+            </div>
+              </div>
+              <div class="items">
+                <div class="images">
+                  <img src="product-5.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                  <b>organic tomato</b><br>
+                  <div class="item-select">
+                    Price:₹30/250gms
+                  </div>
+                  <lable>Qty:</lable>
+                  <select class="item-select">
+                    <option>250gms</option>
+                    <option>500gms</option>
+                    <option>750gms</option>
+                    <option>1000gms</option>
+                  </select><br/>
+                  <span id="myDIV4"></span><br/>
+  <button class="buynow-btn"onclick="myFunction4()">Add to cart:</button>
+                </div>
+                  </div>
+                  <div class="items">
+                    <div class="images">
+                      <img src="product-12.jpg" class="item-image-size"/>
+                    </div>
+                    <div class="description">
+                      <b>organic red chili</b><br>
+                      <div class="item-select">
+                        Price:₹40/250gms
+                      </div>
+                      <lable>Qty:</lable>
+                      <select class="item-select">
+                        <option>250gms</option>
+                        <option>500gms</option>
+                        <option>750gms</option>
+                        <option>1000gms</option>
+                      </select><br/>
+                      <span id="myDIV5"></span><br/>
+  <button class="buynow-btn"onclick="myFunction5()">Add to cart:</button>
+                    </div>
+                      </div>
+</div>
+<!--veg end here-->
+<!--fruits begin here-->
+<div class="deals-container" id="fruits">
+  <div class="parallax">
+    <div class="title">FRUITS</div>
+  </div>
+  <div class="items">
+<div class="images">
+  <img src="product-10.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+  <b>organic Apple</b><br>
+  <div class="item-select">
+    Price:₹100/1000gms
+  </div>
+  <lable>Qty:</lable>
+  <select class="item-select">
+    <option>250gms</option>
+    <option>500gms</option>
+    <option>750gms</option>
+    <option>1000gms</option>
+  </select><br/>
+  <span id="myDIVa"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiona()">Add to cart:</button>
+</div>
+  </div>
+  <div class="items">
+    <div class="images">
+      <img src="category-2.jpg" class="item-image-size"/>
+    </div>
+    <div class="description">
+      <b>strawberry</b><br>
+      <div class="item-select">
+        Price:₹150/1000gms
+      </div>
+      <lable>Qty:</lable>
+      <select class="item-select">
+        <option>250gms</option>
+        <option>500gms</option>
+        <option>750gms</option>
+        <option>1000gms</option>
+      </select><br/>
+      <span id="myDIVa1"></span><br/>
+      <button class="buynow-btn"onclick="myFunctiona1()">Add to cart:</button>
+    </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images (6).jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>papaya</b><br>
+          <div class="item-select">
+            Price:₹80/1000gms
+          </div>
+          <lable>Qty:</lable>
+          <select class="item-select">
+            <option>250gms</option>
+            <option>500gms</option>
+            <option>750gms</option>
+            <option>1000gms</option>
+          </select><br/>
+          <span id="myDIVa2"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiona2()">Add to cart:</button>
+        </div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="images (3).jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>organic mango</b><br>
+              <div class="item-select">
+                Price:₹70/1000gms
+              </div>
+              <lable>Qty:</lable>
+              <select class="item-select">
+                <option>250gms</option>
+                <option>500gms</option>
+                <option>750gms</option>
+                <option>1000gms</option>
+              </select><br/>
+              <span id="myDIVa3"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiona3()">Add to cart:</button>
+            </div>
+              </div>
+              <div class="items">
+                <div class="images">
+                  <img src="images (4).jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                  <b>organic orange</b><br>
+                  <div class="item-select">
+                    Price:₹50/1000gms
+                  </div>
+                  <lable>Qty:</lable>
+                  <select class="item-select">
+                    <option>250gms</option>
+                    <option>500gms</option>
+                    <option>750gms</option>
+                    <option>1000gms</option>
+                  </select><br/>
+                  <span id="myDIVa4"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiona4()">Add to cart:</button>
+                </div>
+                  </div>
+                  <div class="items">
+                    <div class="images">
+                      <img src="images (5).jpg" class="item-image-size"/>
+                    </div>
+                    <div class="description">
+                      <b>organic guava</b><br>
+                      <div class="item-select">
+                        Price:₹40/1000gms
+                      </div>
+                      <lable>Qty:</lable>
+                      <select class="item-select">
+                        <option>250gms</option>
+                        <option>500gms</option>
+                        <option>750gms</option>
+                        <option>1000gms</option>
+                      </select><br/>
+                      <span id="myDIVa5"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiona5()">Add to cart:</button>
+                    </div>
+                      </div>
+</div>
+<!--fruits end here-->
+<!---meat begins here-->
+<div class="deals-container" id="meat">
+  <div class="parallax">
+    <div class="title">MEAT & SEAFOOD</div>
+  </div>
+  <div class="items">
+<div class="images">
+  <img src="download (2).jpg" class="item-image-size"/>
+</div>
+<div class="description">
+  <b>Seafood</b><br>
+  <div class="item-select">
+    Price:₹200/1000gms
+  </div>
+  <lable>Qty:</lable>
+  <select class="item-select">
+    <option>250gms</option>
+    <option>500gms</option>
+    <option>750gms</option>
+    <option>1000gms</option>
+  </select><br/>
+  <span id="myDIVm"></span><br/>
+  <button class="buynow-btn"onclick="myFunctionm()">Add to cart:</button>
+</div>
+  </div>
+  <div class="items">
+    <div class="images">
+      <img src="download (4).jpg" class="item-image-size"/>
+    </div>
+    <div class="description">
+      <b>mutton</b><br>
+      <div class="item-select">
+        Price:₹50/250gms
+      </div>
+      <lable>Qty:</lable>
+      <select class="item-select">
+        <option>250gms</option>
+        <option>500gms</option>
+        <option>750gms</option>
+        <option>1000gms</option>
+      </select><br/>
+      <span id="myDIVm1"></span><br/>
+  <button class="buynow-btn"onclick="myFunctionm1()">Add to cart:</button>
+    </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="download (3).jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>chicken</b><br>
+          <div class="item-select">
+            Price:₹80/250gms
+          </div>
+          <lable>Qty:</lable>
+          <select class="item-select">
+            <option>250gms</option>
+            <option>500gms</option>
+            <option>750gms</option>
+            <option>1000gms</option>
+          </select><br/>
+          <span id="myDIVm2"></span><br/>
+  <button class="buynow-btn"onclick="myFunctionm2()">Add to cart:</button>
+        </div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="images (8).jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>Red meat</b><br>
+              <div class="item-select">
+                Price:₹50/250gms
+              </div>
+              <lable>Qty:</lable>
+              <select class="item-select">
+                <option>250gms</option>
+                <option>500gms</option>
+                <option>750gms</option>
+                <option>1000gms</option>
+              </select><br/>
+              <span id="myDIVm3"></span><br/>
+  <button class="buynow-btn"onclick="myFunctionm3()">Add to cart:</button>
+            </div>
+              </div>
+              <div class="items">
+                <div class="images">
+                  <img src="images (9).jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                  <b>pork ac</b><br>
+                  <div class="item-select">
+                    Price:₹70/250gms
+                  </div>
+                  <lable>Qty:</lable>
+                  <select class="item-select">
+                    <option>250gms</option>
+                    <option>500gms</option>
+                    <option>750gms</option>
+                    <option>1000gms</option>
+                  </select><br/>
+                  <span id="myDIVm4"></span><br/>
+  <button class="buynow-btn"onclick="myFunctionm4()">Add to cart:</button>
+                </div>
+                  </div>
+                  <div class="items">
+                    <div class="images">
+                      <img src="images (7).jpg" class="item-image-size"/>
+                    </div>
+                    <div class="description">
+                      <b>Poultry</b><br>
+                      <div class="item-select">
+                        Price:₹60/250gms
+                      </div>
+                      <lable>Qty:</lable>
+                      <select class="item-select">
+                        <option>250gms</option>
+                        <option>500gms</option>
+                        <option>750gms</option>
+                        <option>1000gms</option>
+                      </select><br/>
+                      <span id="myDIVm5"></span><br/>
+  <button class="buynow-btn"onclick="myFunctionm5()">Add to cart:</button>
+                    </div>
+                      </div>
+</div>
+<!---meat end here-->
+<!--dryfruits begin here-->
+
+<div class="deals-container" id="dryfruits">
+  <div class="parallax">
+    <div class="title">Dry Fruits</div>
+  </div>
+  <div class="items">
+<div class="images">
+  <img src="images (13).jpg" class="item-image-size"/>
+</div>
+<div class="description">
+  <b>currant</b><br>
+  <div class="item-select">
+    Price:₹100/250gms
+  </div>
+  <lable>Qty:</lable>
+  <select class="item-select">
+    <option>250gms</option>
+    <option>500gms</option>
+    <option>750gms</option>
+    <option>1000gms</option>
+  </select><br/>
+  <span id="myDIVd"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiond()">Add to cart:</button>
+</div>
+  </div>
+  <div class="items">
+    <div class="images">
+      <img src="images (12).jpg" class="item-image-size"/>
+    </div>
+    <div class="description">
+      <b>pine Nut</b><br>
+      <div class="item-select">
+        Price:₹300/250gms
+      </div>
+      <lable>Qty:</lable>
+      <select class="item-select">
+        <option>250gms</option>
+        <option>500gms</option>
+        <option>750gms</option>
+        <option>1000gms</option>
+      </select><br/>
+      <span id="myDIVd1"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiond1()">Add to cart:</button>
+    </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images (11).jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>walnuts</b><br>
+          <div class="item-select">
+            Price:₹200/250gms
+          </div>
+          <lable>Qty:</lable>
+          <select class="item-select">
+            <option>250gms</option>
+            <option>500gms</option>
+            <option>750gms</option>
+            <option>1000gms</option>
+          </select><br/>
+          <span id="myDIVd2"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiond2()">Add to cart:</button>
+        </div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="download (6).jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>almonds</b><br>
+              <div class="item-select">
+                Price:₹300/250gms
+              </div>
+              <lable>Qty:</lable>
+              <select class="item-select">
+                <option>250gms</option>
+                <option>500gms</option>
+                <option>750gms</option>
+                <option>1000gms</option>
+              </select><br/>
+              <span id="myDIVd3"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiond3()">Add to cart:</button>
+            </div>
+              </div>
+              <div class="items">
+                <div class="images">
+                  <img src="download (5).jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                  <b>cashew nut</b><br>
+                  <div class="item-select">
+                    Price:₹250/250gms
+                  </div>
+                  <lable>Qty:</lable>
+                  <select class="item-select">
+                    <option>250gms</option>
+                    <option>500gms</option>
+                    <option>750gms</option>
+                    <option>1000gms</option>
+                  </select><br/>
+                  <span id="myDIVd4"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiond4()">Add to cart:</button>
+                </div>
+                  </div>
+                  <div class="items">
+                    <div class="images">
+                      <img src="images (10).jpg" class="item-image-size"/>
+                    </div>
+                    <div class="description">
+                      <b>pistachio</b><br>
+                      <div class="item-select">
+                        Price:₹240/250gms
+                      </div>
+                      <lable>Qty:</lable>
+                      <select class="item-select">
+                        <option>250gms</option>
+                        <option>500gms</option>
+                        <option>750gms</option>
+                        <option>1000gms</option>
+                      </select><br/>
+                      <span id="myDIVd5"></span><br/>
+  <button class="buynow-btn"onclick="myFunctiond5()">Add to cart:</button>
+                    </div>
+                      </div>
+					  <div class="deals-container" id="vegetables">
+  
+    <div class="deals-container" id="cart">
+    <div class="parallax">
+    <div class="title">CART</div>
+  </div>
+    </div>
+  <div>
+    <p style="font-weight:bold;font-size:15px;" id="b"></p>
+	<p style="font-weight:bold;font-size:15px;" id="b1"></p>
+  <p style="font-weight:bold;font-size:15px;" id="b2"></p>
+  <p style="font-weight:bold;font-size:15px;" id="b3"></p>
+  <p style="font-weight:bold;font-size:15px;" id="b4"></p>
+  <p style="font-weight:bold;font-size:15px;" id="b5"></p>
+  <p style="font-weight:bold;font-size:15px;" id="a"></p>
+  <p style="font-weight:bold;font-size:15px;" id="a1"></p>
+  <p style="font-weight:bold;font-size:15px;" id="a2"></p>
+  <p style="font-weight:bold;font-size:15px;" id="a3"></p>
+  <p style="font-weight:bold;font-size:15px;" id="a4"></p>
+  <p style="font-weight:bold;font-size:15px;" id="a5"></p>
+  <p style="font-weight:bold;font-size:15px;" id="m"></p>
+  <p style="font-weight:bold;font-size:15px;" id="m1"></p>
+  <p style="font-weight:bold;font-size:15px;" id="m2"></p>
+  <p style="font-weight:bold;font-size:15px;" id="m3"></p>
+  <p style="font-weight:bold;font-size:15px;" id="m4"></p>
+  <p style="font-weight:bold;font-size:15px;" id="m5"></p>
+  <p style="font-weight:bold;font-size:15px;" id="d"></p>
+  <p style="font-weight:bold;font-size:15px;" id="d1"></p>
+  <p style="font-weight:bold;font-size:15px;" id="d2"></p>
+  <p style="font-weight:bold;font-size:15px;" id="d3"></p>
+  <p style="font-weight:bold;font-size:15px;" id="d4"></p>
+  <p style="font-weight:bold;font-size:15px;" id="d5"></p>
+  </div>
+  <a href="payment.html">PAYMENT</a>
+</div>
+<!--dryfruits end here-->
+
+  <!---feedback form starts here-->
+
+  <!---feedback form starts here-->
+  </body>
+
+</html>
